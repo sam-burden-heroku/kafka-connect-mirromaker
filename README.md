@@ -1,1 +1,1 @@
-# kafka-mirromaker
+# Kafka Connect Mirror
