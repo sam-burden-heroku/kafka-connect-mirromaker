@@ -80,7 +80,7 @@ The only files you really need now are `truststore.jks` and `keystore.jks`, so i
     ```
     curl localhost:28082/connectors
     ```
-    If there is an error you can delete and create the connector. To delete run:
+    If there is an error you can delete and recreate the connector. To delete a connector run:
     ```
     curl -X DELETE localhost:28082/connectors/test_mirror
     ```
