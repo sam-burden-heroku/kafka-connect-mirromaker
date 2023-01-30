@@ -1,0 +1,19 @@
+{
+    "name":"test_mirror",
+    "config": {
+      "connector.class": "org.apache.kafka.connect.mirror.MirrorSourceConnector",
+      "name":"test_mirror",
+      "source.cluster.alias":"source",
+      "topics":"<NAME OF YOUR TOPIC>",
+      "source.cluster.bootstrap.servers":"<LIST OF YOUR KAFKA TOPICS: <BROKER>:<PORT>, <BROKER>:<PORT>",
+      "target.cluster.bootstrap.servers":"broker:29092",
+      "source.cluster.security.protocol":"SSL",
+      "source.cluster.ssl.truststore.location": "/certs/truststore.jks",
+      "source.cluster.ssl.truststore.password": "<TRUSTSTORE PASSWORD>",
+      "source.cluster.ssl.keystore.location": "/certs/keystore.jks",
+      "source.cluster.ssl.keystore.password": "<KEYSTORE PASSWORD>",
+      "source.cluster.ssl.key.password": "<KEY PASSWORD>",
+      "source.cluster.ssl.endpoint.identification.algorithm": "",
+      "offset-syncs.topic.replication.factor":"1"
+    }
+  }
