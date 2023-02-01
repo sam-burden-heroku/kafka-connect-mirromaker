@@ -26,7 +26,7 @@ Kafka Connect requires certificates in the JKS format but Heroku provides them i
     ```
     export APP_NAME=<YOUR_APP_NAME>
     heroku config:get KAFKA_CLIENT_CERT -a $APP_NAME > certs/cert.pem
-    heroku config:get KAFKA_CLIENT_CERT_KEY -a $APP_NAME > certs/cert.pem
+    heroku config:get KAFKA_CLIENT_CERT_KEY -a $APP_NAME > certs/key.pem
     heroku config:get KAFKA_TRUSTED_CERT -a $APP_NAME > certs/trusted_cert.pem
     ```
 
